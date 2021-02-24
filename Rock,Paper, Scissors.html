@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>RPS Situation</title>
+    <link href="RPS.css" rel="stylesheet" />
+    <script defer src="RPS.js"></script>
+</head>
+<body>
+    <div id="wholepage">
+        <div id="header1">
+            <h1>Rock Paper Scissors</h1>
+            </div>
+        <div id="header2">
+            <h2>Let's begin!</h2>
+            </div>
+
+        <div id="actualRPS">
+        <div id="playerContainer">
+            <div class="scoreboard">
+                <div id="playerScore">
+                    <span>Player</span>
+                </div>
+                <span class="score">Score: <span id="playerScorepoint" class="points">0</span></span>
+                </div>
+            <div class="iconContainer">
+                <img id="PLAplay" src="icons/placeholder.png" alt="player" />
+                </div>
+            </div>
+        <div id="cpuContainer">
+            <div class="scoreboard">
+                <div id="cpuScore">
+                    <span>CPU</span>
+                </div>
+                <span class="score">Score: <span id="cpuScorepoint" class="points">0</span></span>
+                </div>
+            <div class="iconContainer">
+                <img id="CPUplay" src="icons/placeholder.png" alt="CPU" />
+                </div>
+        </div>
+            </div>
+
+        <div id="selectRPS">
+            <h2 id="selectTitle">Here goes:</h2>
+            <div id="buttonsRPS">
+                <button onclick="chooseRock()" class="choiceButton" id="rock"><img class="choice" src="icons/PLArock.png" alt="rock" /></button>
+                <button onclick="chooseScissors()" class="choiceButton" id="scissors"><img class="choice" src="icons/PLAscissors.png" alt="scissors" /></button>
+                <button onclick="choosePaper()" class="choiceButton" id="paper"><img class="choice" src="icons/PLApaper.png" alt="paper" /></button>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
